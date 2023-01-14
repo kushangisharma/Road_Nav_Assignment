@@ -1,5 +1,5 @@
 class Node:
-    def _init_(self, label):
+    def __init__(self, label):
         self.label = label
         self.visited = False
         self.adj_list = []
@@ -14,7 +14,7 @@ class Node:
         self.adj_list.append(node)
 
 class Graph:
-    def _init_(self):
+    def __init__(self):
         self.nodes = []
 
     def add_vertex(self, label):
